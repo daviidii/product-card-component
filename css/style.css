@@ -1,0 +1,149 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 23.44em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #6c7289; }
+
+.heading-primary {
+  font-family: 'Fraunces', serif;
+  font-size: 4.8rem;
+  line-height: 1;
+  color: #1c232b;
+  margin: 4rem 0; }
+  @media (max-width: 23.44em) {
+    .heading-primary {
+      font-size: 3rem;
+      margin: 2rem 0; } }
+
+.paragraph {
+  font-size: 1.4rem;
+  line-height: 1.8; }
+
+.strike-through {
+  text-decoration: line-through; }
+
+.util-space-between {
+  justify-content: space-between; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 30px; }
+
+.attribution a {
+  color: #3e52a3; }
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 3rem;
+  background: #f2ebe3; }
+
+.product-card {
+  background: white;
+  display: flex;
+  max-width: 80rem;
+  border-radius: 10px;
+  overflow: hidden; }
+  @media (max-width: 34.375em) {
+    .product-card {
+      flex-direction: column; } }
+  @media (max-width: 23.44em) {
+    .product-card {
+      flex-direction: column; } }
+  .product-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; }
+    @media (max-width: 34.375em) {
+      .product-card__img--desktop {
+        display: none; } }
+    @media (max-width: 23.44em) {
+      .product-card__img--desktop {
+        display: none; } }
+    .product-card__img--mobile {
+      display: none; }
+      @media (max-width: 34.375em) {
+        .product-card__img--mobile {
+          display: block; } }
+      @media (max-width: 23.44em) {
+        .product-card__img--mobile {
+          display: block; } }
+  .product-card__left {
+    max-width: 50%; }
+    @media (max-width: 34.375em) {
+      .product-card__left {
+        max-width: 100%;
+        height: 50%; } }
+    @media (max-width: 23.44em) {
+      .product-card__left {
+        max-width: 100%;
+        height: 50%; } }
+  .product-card__right {
+    padding: 4rem;
+    gap: 2rem; }
+  .product-card__text-box {
+    max-width: 30rem; }
+    @media (max-width: 34.375em) {
+      .product-card__text-box {
+        max-width: 40rem; } }
+    @media (max-width: 23.44em) {
+      .product-card__text-box {
+        max-width: none; } }
+  .product-card__type {
+    text-transform: uppercase;
+    letter-spacing: 5px; }
+  .product-card__price-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%; }
+    @media (max-width: 34.375em) {
+      .product-card__price-box {
+        max-width: 90%; } }
+  .product-card__price {
+    font-family: 'Fraunces', serif;
+    font-size: 4.4rem;
+    color: #3c8067; }
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background: #3c8067;
+  padding: 2rem 4.8rem;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 700;
+  color: white;
+  margin-top: auto;
+  cursor: pointer;
+  transition: all 0.3s ease; }
+  .btn:hover {
+    background: #1c232b; }
+
+.flex-colum {
+  display: flex;
+  flex-direction: column; }
